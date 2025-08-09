@@ -1,42 +1,38 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
 
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans';
+  color: #ffffff;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  background-color: #000000;
+  color: #ffffff;
+  user-select: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.middle, .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center {
+  height: 100vh;
+}
+
+.btn {
+  background-color: #101010;
+  border: none;
+  padding: 15px 35px;
+  font-size: 20px;
+  border-radius: 25px;
+  transition: all ease 0.1s;
+}
+
+.btn:hover {
+  background-color: #050505;
 }
